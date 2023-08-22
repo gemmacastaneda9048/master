@@ -1,0 +1,88 @@
+#nombre{/* Cambiar el color y fuente del título del CV */
+    color:#0c999e;
+    font-family: 'Oswald', sans-serif;
+    /*font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif*/
+}
+
+/* Cambiar el color del texto */
+h1, h2, p, li, a {
+    color: #477fa1ad; 
+}
+
+/* Cambiar el tamaño de fuente de un elemento */
+h1 {
+    font-size: 28px; /* Cambia el tamaño de fuente del encabezado principal */
+}
+
+/* Importar una fuente de Google */
+/* Importar la fuente 'Roboto' de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Aplicar la fuente importada a todo el documento */
+body {
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+/* Agregar bordes alrededor de sus elementos */
+table, th, td {
+    border: 5px groove #f3b3d2; /* Agregar un borde de 5px alrededor de las tablas */
+    border-collapse: collapse; /* Colapsar bordes para evitar espacios entre celdas */
+}
+
+td:hover {
+    background-color: #c6c2c2;
+    cursor: pointer;/*Oscurece del color de arriba al pasar el mouse*/
+}
+
+/* Dar un color de fondo a un elemento div */
+.cv-container {
+    background-color: #ebdcdc; /* Cambiar el color de fondo del contenedor principal */
+    padding: 20px; /* Agregar un espacio de relleno alrededor del contenedor */
+}
+
+/* Utilizar la herencia de estilos */
+/* Los estilos se heredarán de manera predeterminada */
+
+/* Utilizar el código hexadecimal para colores específicos */
+/* Cambia el color de la habilidad resaltada */
+ul.skills-list li span {
+    color: #7d7fff; /* Cambiar el color del porcentaje de habilidades a un tono de morado */
+}
+#nombre{
+    background-color: #fff;/*color de fondo blanco del elemento nombre*/
+    text-shadow: 2px 2px 4px #808080; /* Aplica sombra al texto, recibe 3 valores: desplazamiento horizontal, el segundo es el desplazamiento vertical y el tercero es el color de la sombra. */
+    padding: 0.2rem 1rem; /* establece el espacio de relleno dentro del elemento con ID "nombre". */
+    position: fixed;/**/
+    top: 0; 
+    left: 0;
+    width:100%;
+    z-index: 1000;
+}
+
+/* Crear una variable CSS personalizada */
+:root {
+    --color-destacado: #ff9900; /* Definir una variable personalizada para el color de resaltado */
+}
+
+/* Utilice la variable personalizada en su diseño */
+h2 {
+    color: var(--color-destacado); /* Usar la variable para el color de encabezados */
+}
+
+/* Modificar tamaño de imágenes */
+
+img {
+    width: 150px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin: 20px;
+    display: block; /* Para asegurarse de que la imagen sea un elemento en línea y no un elemento en línea en línea. */
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover {
+    filter: grayscale(100%); /* Cambia la imagen a escala de grises al pasar el cursor */
+    cursor: pointer;
+}
